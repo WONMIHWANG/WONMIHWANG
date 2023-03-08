@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB DESIGN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
+    		<!-- aos css -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #ffe7c2;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .con {
+            width: 1320px;
+            margin: 0 auto;
+        }
+
+        .button {
+            list-style: none;
+            position: fixed;
+            bottom: 50px;
+            right: 70px;
+            text-align: center;
+        }
+
+        .button li {
+            margin: 10px;
+        }
+
+        .button li a {
+            display: inline-block;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgb(0 0 0 / 30%);
+            background: linear-gradient(to right, #496c70, transparent);
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 0.1em;
+        }
+        .backimg{position: absolute;}
+
+        @keyframes ani1{
+            0%{}
+            100%{transform: rotate(45deg);}
+        }
+
+        @keyframes ani2{
+            0%{}
+            100%{transform: rotate(-45deg);}
+        }
+        @keyframes ani3{
+            0%{}
+            100%{transform: rotate(-7deg);}
+        }
+            .perspective{width: 100%; display: flex; flex-direction: column; align-items: center; margin: 200px 0; }
+            .front{width: 100%; display: flex; justify-content: center; gap:10px;}
+            .front span{display: inline-block; font-size: 150px; font-family: 'Damion', cursive; color: #35160e;}
+            .front.tada3{animation: ani6 2s 6s forwards;}
+            .front.tada3 .F{animation: ani5 2s alternate, ani7 6s forwards;}
+            .front span.tada4{animation: ani5 2s alternate;}
+            
+            .perspective .img1{ transform: translateZ(600px); margin-bottom: 20px; margin-top: -250px; opacity: 0;}
+            .perspective .img1.tada{animation: ani4 1s 7s forwards;}
+            .perspective .img2.tada2{animation: ani4-1 1s 7.5s forwards;}
+
+            .perspective .img2{transform: translateZ(-3000px); visibility: hidden;}
+            @keyframes ani4{
+                0%{}
+                100%{transform: translateZ(0); opacity: 1;}
+            }
+            @keyframes ani4-1{
+                0%{}
+                30%{visibility: visible;}
+                100%{visibility: visible; transform: translateZ(0);}
+            }
+            @keyframes ani5{
+                50%{transform: translateY(-50px);}
+                100%{transform: translateY(0);}
+            }
+             @keyframes ani6{
+                 0%{}
+                 100%{gap:100%;}
+            }
+            @keyframes ani7{
+                 99%{visibility: visible;}
+                 100%{visibility: hidden;}
+            }
+            
+    </style>
+</head>
+
+<body>
+    <div class="con">
+        <img src="./web_img/15.jpg" alt="">
+        <img data-aos="fade-left" data-aos-easing="ease-out-back" src="./web_img/16.jpg" alt="">
+        <img data-aos="fade-right" src="./web_img/17.jpg" alt="">
+        <img data-aos="fade-left" data-aos-easing="ease-out-back" src="./web_img/18.jpg" alt="">
+        <img data-aos="fade-right" src="./web_img/19.jpg" alt="">
+        <img data-aos="fade-left" data-aos-easing="ease-out-back" src="./web_img/20.jpg" alt="">
+        <img data-aos="fade-right" src="./web_img/21.jpg" alt="">
+        <img data-aos="fade-left" data-aos-easing="ease-out-back" src="./web_img/22.jpg" alt="">
+        <img data-aos="fade-right" src="./web_img/23.jpg" alt="">
+        <img data-aos="fade-left" data-aos-easing="ease-out-back" src="./web_img/24.jpg" alt="">
+        <img data-aos="fade-right" src="./web_img/25.jpg" alt="">
+        <img data-aos="fade-left" data-aos-easing="ease-out-back" src="./web_img/26.jpg" alt="">
+    </div>
+
+    <ul class="button">
+        <li><a href="#">top</a></li>
+        <li><a href="https://wonmihwang.github.io/B_ready/index.html">home</a></li>
+        <img style="position: absolute; top: -80px; right: -50px; animation: ani3 1s infinite alternate linear; z-index: -9;" src="./web_img/backflower.png" alt="">
+        <img style="position: absolute; top: 10px; right: 70px; animation: ani3 2s infinite alternate linear; z-index: -9;" src="./web_img/backflower2.png" alt="">
+    </ul>
+            <div style="perspective: 1000px;" class="perspective">
+            <div style="transform-style: preserve-3d;" class="front">
+        <span>T</span>
+        <span style="animation-delay: 0.5s">h</span>
+        <span style="animation-delay: 1s">a</span>
+        <span style="animation-delay: 1.5s">n</span>
+        <span class="F" style="animation-delay: 2s; margin-right: 50px;">k</span>
+        <span style="animation-delay: 2.5s">Y</span>
+        <span style="animation-delay: 3s">o</span>
+        <span style="animation-delay: 3.5s">u</span>
+        </div>
+        <img style="width: 274px;" src="./web_img/simbol.png" alt="" class="img1">
+        <img src="./web_img/simbol_logo.png" alt="" class="img2">
+</div>
+        
+
+
+<script>
+    const io = new IntersectionObserver(entries => {
+entries.forEach(entry => {
+    // 관찰 대상이 viewport 안에 들어온 경우 'tada' 클래스를 추가
+    if (entry.intersectionRatio > 0) {
+    entry.target.classList.add('tada');
+    }
+    // 그 외의 경우 'tada' 클래스 제거
+    else {
+    entry.target.classList.remove('tada');
+    }
+})
+})
+
+// 관찰할 대상을 선언하고, 해당 속성을 관찰시킨다.
+const boxElList = document.querySelectorAll('.img1');
+boxElList.forEach((el) => {
+io.observe(el);
+})
+</script>
+
+<script>
+const io2 = new IntersectionObserver(entries => {
+entries.forEach(entry => {
+    // 관찰 대상이 viewport 안에 들어온 경우 'tada' 클래스를 추가
+    if (entry.intersectionRatio > 0) {
+    entry.target.classList.add('tada2');
+    }
+    // 그 외의 경우 'tada' 클래스 제거
+    else {
+    entry.target.classList.remove('tada2');
+    }
+})
+})
+
+// 관찰할 대상을 선언하고, 해당 속성을 관찰시킨다.
+const boxElList2 = document.querySelectorAll('.img2');
+boxElList2.forEach((el) => {
+io2.observe(el);
+})
+</script>
+
+<script>
+    const io3 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        // 관찰 대상이 viewport 안에 들어온 경우 'tada' 클래스를 추가
+        if (entry.intersectionRatio > 0) {
+        entry.target.classList.add('tada3');
+        }
+        // 그 외의 경우 'tada' 클래스 제거
+        else {
+        entry.target.classList.remove('tada3');
+        }
+    })
+    })
+    
+    // 관찰할 대상을 선언하고, 해당 속성을 관찰시킨다.
+    const boxElList3 = document.querySelectorAll('.front');
+    boxElList3.forEach((el) => {
+    io3.observe(el);
+    })
+    </script>
+
+<script>
+    const io4 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        // 관찰 대상이 viewport 안에 들어온 경우 'tada' 클래스를 추가
+        if (entry.intersectionRatio > 0) {
+        entry.target.classList.add('tada4');
+        }
+        // 그 외의 경우 'tada' 클래스 제거
+        else {
+        entry.target.classList.remove('tada4');
+        }
+    })
+    })
+    
+    // 관찰할 대상을 선언하고, 해당 속성을 관찰시킨다.
+    const boxElList4 = document.querySelectorAll('.front span');
+    boxElList4.forEach((el) => {
+    io4.observe(el);
+    })
+    </script>
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+		<!-- js -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><!-- aos 라이브러리 -->
+		<script src="script/aos.js"></script><!-- aos 소스 -->
+       
+</body>
+
+</html>
