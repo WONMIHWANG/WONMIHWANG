@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    		<!-- aos css -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #ffe7c2;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .con {
+            width: 1320px;
+            margin: auto;
+        }
+
+        .button {
+            list-style: none;
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+            text-align: center;
+        }
+
+        .button li {
+            margin: 10px;
+        }
+
+        .button li a {
+            display: inline-block;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgb(0 0 0 / 30%);
+            background: #f5a465;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 0.1em;
+        }
+
+        @keyframes ani1{
+            0%{}
+            25%{transform: rotate(5deg);}
+            50%{transform: rotate(0deg);}
+            75%{transform: rotate(5deg);}
+            100%{transform: rotate(0deg);}
+        }
+        @keyframes ani2{
+            0%{}
+            100%{transform: scale(1);}
+        }
+    </style>
+</head>
+
+<body>
+    <div class="con">
+        <img data-aos="fade-right" src="./bibx_img/01.jpg" alt="">
+        <img data-aos="fade-left" src="./bibx_img/02.jpg" alt="">
+        <img data-aos="fade-right" src="./bibx_img/03.jpg" alt="">
+        <img data-aos="fade-left" src="./bibx_img/04.jpg" alt="">
+        <img data-aos="fade-right" src="./bibx_img/05.jpg" alt="">
+        <img data-aos="fade-left" src="./bibx_img/06.jpg" alt="">
+        <img data-aos="fade-right" src="./bibx_img/07.jpg" alt="">
+        <img data-aos="fade-left" src="./bibx_img/08.jpg" alt="">
+        <img data-aos="fade-right" src="./bibx_img/09.jpg" alt="">
+        <img data-aos="fade-left" src="./bibx_img/10.jpg" alt="">
+        <img data-aos="fade-right" src="./bibx_img/11.jpg" alt="">
+        <img data-aos="fade-left" src="./bibx_img/12.jpg" alt="">
+        <img data-aos="fade-right" src="./bibx_img/13.jpg" alt="">
+        <img data-aos="fade-left" src="./bibx_img/14.jpg" alt="">
+        <img data-aos="fade-right" src="./bibx_img/15.jpg" alt="">
+        <img data-aos="fade-left" src="./bibx_img/29.jpg" alt="">
+    </div>
+
+    <ul class="button">
+        <li style="position: relative;"><a href="#">top</a>
+            <img style="position: absolute; top: -100px; right: 0; z-index: -9; transform: scale(0.4); animation: ani2 2s infinite alternate;"src="./bibx_img/yellow.png" alt="">
+            <img style="position: absolute; top: -110px; right: 0; z-index: -9; animation: ani1 2s infinite;" src="./bibx_img/flower.png" alt=""></li>
+        <li><a href="https://wonmihwang.github.io/B_ready/index.html">home</a></li>
+    </ul>
+
+    		<!-- js -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><!-- aos 라이브러리 -->
+		<script src="script/aos.js"></script><!-- aos 소스 -->
+
+</body>
+
+</html>
